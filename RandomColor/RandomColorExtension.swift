@@ -34,7 +34,7 @@ public extension UIColor {
     
     
     /**
-    Random color
+    Random tone of color
     
     :returns: Color
     */
