@@ -10,7 +10,7 @@ import Foundation
 
 
 
-extension UIColor {
+public extension UIColor {
     
     
     private class func randomValueForColor() -> CGFloat {
