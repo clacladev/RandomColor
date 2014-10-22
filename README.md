@@ -15,6 +15,11 @@ In the test project you can test the two methods
 
 
 # Installation
+
+### Option A: Frameworks (Best)
+Trasnform your XCode project into a workspace. Then add the RandomColorExample project to your workspace. Now goes in the Project, select your app *target* and add a new *Linked Framework*. Add the framework with name **RandomColor.framework**.
+
+### Option B: Copy
 Download the code and add to your project the file **RandomColorExtension.swift** . Start to use the new class methods.
 
 
