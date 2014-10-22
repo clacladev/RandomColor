@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:RandomColor.xcodeproj">
+      location = "self:RandomColorExample.xcodeproj">
    </FileRef>
 </Workspace>

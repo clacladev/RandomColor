@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import RandomColorLib
+import RandomColor
 
 class ViewController: UIViewController {
 
