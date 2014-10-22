@@ -13,6 +13,12 @@
 		CA95E2C719F7FF39001D6DF4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA95E2C619F7FF39001D6DF4 /* Images.xcassets */; };
 		CA95E2CA19F7FF39001D6DF4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA95E2C819F7FF39001D6DF4 /* LaunchScreen.xib */; };
 		CA95E2D619F7FF39001D6DF4 /* RandomColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA95E2D519F7FF39001D6DF4 /* RandomColorTests.swift */; };
+		CA95E2E919F8007B001D6DF4 /* RandomColorLib.h in Headers */ = {isa = PBXBuildFile; fileRef = CA95E2E819F8007B001D6DF4 /* RandomColorLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA95E2EF19F8007B001D6DF4 /* RandomColorLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA95E2E419F8007B001D6DF4 /* RandomColorLib.framework */; };
+		CA95E2F819F8007B001D6DF4 /* RandomColorLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA95E2F719F8007B001D6DF4 /* RandomColorLibTests.swift */; };
+		CA95E2FB19F8007B001D6DF4 /* RandomColorLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA95E2E419F8007B001D6DF4 /* RandomColorLib.framework */; };
+		CA95E2FC19F8007B001D6DF4 /* RandomColorLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA95E2E419F8007B001D6DF4 /* RandomColorLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CA95E30519F80091001D6DF4 /* RandomColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA95E30419F80091001D6DF4 /* RandomColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +29,42 @@
 			remoteGlobalIDString = CA95E2B919F7FF39001D6DF4;
 			remoteInfo = RandomColor;
 		};
+		CA95E2F019F8007B001D6DF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA95E2B219F7FF39001D6DF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA95E2E319F8007B001D6DF4;
+			remoteInfo = RandomColorLib;
+		};
+		CA95E2F219F8007B001D6DF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA95E2B219F7FF39001D6DF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA95E2B919F7FF39001D6DF4;
+			remoteInfo = RandomColor;
+		};
+		CA95E2F919F8007B001D6DF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA95E2B219F7FF39001D6DF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA95E2E319F8007B001D6DF4;
+			remoteInfo = RandomColorLib;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA95E30019F8007B001D6DF4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CA95E2FC19F8007B001D6DF4 /* RandomColorLib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CA95E2BA19F7FF39001D6DF4 /* RandomColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +77,13 @@
 		CA95E2CF19F7FF39001D6DF4 /* RandomColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA95E2D419F7FF39001D6DF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA95E2D519F7FF39001D6DF4 /* RandomColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorTests.swift; sourceTree = "<group>"; };
+		CA95E2E419F8007B001D6DF4 /* RandomColorLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RandomColorLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA95E2E719F8007B001D6DF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA95E2E819F8007B001D6DF4 /* RandomColorLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomColorLib.h; sourceTree = "<group>"; };
+		CA95E2EE19F8007B001D6DF4 /* RandomColorLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomColorLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA95E2F619F8007B001D6DF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA95E2F719F8007B001D6DF4 /* RandomColorLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorLibTests.swift; sourceTree = "<group>"; };
+		CA95E30419F80091001D6DF4 /* RandomColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA95E2FB19F8007B001D6DF4 /* RandomColorLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +99,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA95E2E019F8007B001D6DF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA95E2EB19F8007B001D6DF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA95E2EF19F8007B001D6DF4 /* RandomColorLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +125,8 @@
 			children = (
 				CA95E2BC19F7FF39001D6DF4 /* RandomColor */,
 				CA95E2D219F7FF39001D6DF4 /* RandomColorTests */,
+				CA95E2E519F8007B001D6DF4 /* RandomColorLib */,
+				CA95E2F419F8007B001D6DF4 /* RandomColorLibTests */,
 				CA95E2BB19F7FF39001D6DF4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +136,8 @@
 			children = (
 				CA95E2BA19F7FF39001D6DF4 /* RandomColor.app */,
 				CA95E2CF19F7FF39001D6DF4 /* RandomColorTests.xctest */,
+				CA95E2E419F8007B001D6DF4 /* RandomColorLib.framework */,
+				CA95E2EE19F8007B001D6DF4 /* RandomColorLibTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,7 +180,53 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CA95E2E519F8007B001D6DF4 /* RandomColorLib */ = {
+			isa = PBXGroup;
+			children = (
+				CA95E2E819F8007B001D6DF4 /* RandomColorLib.h */,
+				CA95E30419F80091001D6DF4 /* RandomColorExtension.swift */,
+				CA95E2E619F8007B001D6DF4 /* Supporting Files */,
+			);
+			path = RandomColorLib;
+			sourceTree = "<group>";
+		};
+		CA95E2E619F8007B001D6DF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA95E2E719F8007B001D6DF4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA95E2F419F8007B001D6DF4 /* RandomColorLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA95E2F719F8007B001D6DF4 /* RandomColorLibTests.swift */,
+				CA95E2F519F8007B001D6DF4 /* Supporting Files */,
+			);
+			path = RandomColorLibTests;
+			sourceTree = "<group>";
+		};
+		CA95E2F519F8007B001D6DF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA95E2F619F8007B001D6DF4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CA95E2E119F8007B001D6DF4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA95E2E919F8007B001D6DF4 /* RandomColorLib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		CA95E2B919F7FF39001D6DF4 /* RandomColor */ = {
@@ -122,10 +236,12 @@
 				CA95E2B619F7FF39001D6DF4 /* Sources */,
 				CA95E2B719F7FF39001D6DF4 /* Frameworks */,
 				CA95E2B819F7FF39001D6DF4 /* Resources */,
+				CA95E30019F8007B001D6DF4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CA95E2FA19F8007B001D6DF4 /* PBXTargetDependency */,
 			);
 			name = RandomColor;
 			productName = RandomColor;
@@ -150,6 +266,43 @@
 			productReference = CA95E2CF19F7FF39001D6DF4 /* RandomColorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CA95E2E319F8007B001D6DF4 /* RandomColorLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA95E2FD19F8007B001D6DF4 /* Build configuration list for PBXNativeTarget "RandomColorLib" */;
+			buildPhases = (
+				CA95E2DF19F8007B001D6DF4 /* Sources */,
+				CA95E2E019F8007B001D6DF4 /* Frameworks */,
+				CA95E2E119F8007B001D6DF4 /* Headers */,
+				CA95E2E219F8007B001D6DF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RandomColorLib;
+			productName = RandomColorLib;
+			productReference = CA95E2E419F8007B001D6DF4 /* RandomColorLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CA95E2ED19F8007B001D6DF4 /* RandomColorLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA95E30119F8007B001D6DF4 /* Build configuration list for PBXNativeTarget "RandomColorLibTests" */;
+			buildPhases = (
+				CA95E2EA19F8007B001D6DF4 /* Sources */,
+				CA95E2EB19F8007B001D6DF4 /* Frameworks */,
+				CA95E2EC19F8007B001D6DF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA95E2F119F8007B001D6DF4 /* PBXTargetDependency */,
+				CA95E2F319F8007B001D6DF4 /* PBXTargetDependency */,
+			);
+			name = RandomColorLibTests;
+			productName = RandomColorLibTests;
+			productReference = CA95E2EE19F8007B001D6DF4 /* RandomColorLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -163,6 +316,13 @@
 						CreatedOnToolsVersion = 6.1;
 					};
 					CA95E2CE19F7FF39001D6DF4 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = CA95E2B919F7FF39001D6DF4;
+					};
+					CA95E2E319F8007B001D6DF4 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					CA95E2ED19F8007B001D6DF4 = {
 						CreatedOnToolsVersion = 6.1;
 						TestTargetID = CA95E2B919F7FF39001D6DF4;
 					};
@@ -183,6 +343,8 @@
 			targets = (
 				CA95E2B919F7FF39001D6DF4 /* RandomColor */,
 				CA95E2CE19F7FF39001D6DF4 /* RandomColorTests */,
+				CA95E2E319F8007B001D6DF4 /* RandomColorLib */,
+				CA95E2ED19F8007B001D6DF4 /* RandomColorLibTests */,
 			);
 		};
 /* End PBXProject section */
@@ -199,6 +361,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CA95E2CD19F7FF39001D6DF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA95E2E219F8007B001D6DF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA95E2EC19F8007B001D6DF4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -225,6 +401,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CA95E2DF19F8007B001D6DF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA95E30519F80091001D6DF4 /* RandomColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA95E2EA19F8007B001D6DF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA95E2F819F8007B001D6DF4 /* RandomColorLibTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +424,21 @@
 			isa = PBXTargetDependency;
 			target = CA95E2B919F7FF39001D6DF4 /* RandomColor */;
 			targetProxy = CA95E2D019F7FF39001D6DF4 /* PBXContainerItemProxy */;
+		};
+		CA95E2F119F8007B001D6DF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA95E2E319F8007B001D6DF4 /* RandomColorLib */;
+			targetProxy = CA95E2F019F8007B001D6DF4 /* PBXContainerItemProxy */;
+		};
+		CA95E2F319F8007B001D6DF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA95E2B919F7FF39001D6DF4 /* RandomColor */;
+			targetProxy = CA95E2F219F8007B001D6DF4 /* PBXContainerItemProxy */;
+		};
+		CA95E2FA19F8007B001D6DF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA95E2E319F8007B001D6DF4 /* RandomColorLib */;
+			targetProxy = CA95E2F919F8007B001D6DF4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -388,6 +595,81 @@
 			};
 			name = Release;
 		};
+		CA95E2FE19F8007B001D6DF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RandomColorLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA95E2FF19F8007B001D6DF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RandomColorLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA95E30219F8007B001D6DF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RandomColorLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RandomColor.app/RandomColor";
+			};
+			name = Debug;
+		};
+		CA95E30319F8007B001D6DF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RandomColorLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RandomColor.app/RandomColor";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -413,6 +695,22 @@
 			buildConfigurations = (
 				CA95E2DD19F7FF39001D6DF4 /* Debug */,
 				CA95E2DE19F7FF39001D6DF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CA95E2FD19F8007B001D6DF4 /* Build configuration list for PBXNativeTarget "RandomColorLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA95E2FE19F8007B001D6DF4 /* Debug */,
+				CA95E2FF19F8007B001D6DF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CA95E30119F8007B001D6DF4 /* Build configuration list for PBXNativeTarget "RandomColorLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA95E30219F8007B001D6DF4 /* Debug */,
+				CA95E30319F8007B001D6DF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

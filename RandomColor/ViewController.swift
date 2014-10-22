@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RandomColorLib
 
 class ViewController: UIViewController {
 
@@ -19,7 +20,14 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func didPressNewRandomColorButton(sender: AnyObject) {
+        self.view.backgroundColor = UIColor.randomColor()
+    }
+    
+    @IBAction func didPressNewRandomToneByColorButton(sender: AnyObject) {
+        self.view.backgroundColor = UIColor.randomToneByColor(self.view.backgroundColor!)
+    }
 
 }
 

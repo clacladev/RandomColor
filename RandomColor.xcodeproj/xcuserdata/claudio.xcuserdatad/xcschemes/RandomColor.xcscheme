@@ -34,6 +34,20 @@
                ReferencedContainer = "container:RandomColor.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CA95E2ED19F8007B001D6DF4"
+               BuildableName = "RandomColorLibTests.xctest"
+               BlueprintName = "RandomColorLibTests"
+               ReferencedContainer = "container:RandomColor.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -49,6 +63,16 @@
                BlueprintIdentifier = "CA95E2CE19F7FF39001D6DF4"
                BuildableName = "RandomColorTests.xctest"
                BlueprintName = "RandomColorTests"
+               ReferencedContainer = "container:RandomColor.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CA95E2ED19F8007B001D6DF4"
+               BuildableName = "RandomColorLibTests.xctest"
+               BlueprintName = "RandomColorLibTests"
                ReferencedContainer = "container:RandomColor.xcodeproj">
             </BuildableReference>
          </TestableReference>
