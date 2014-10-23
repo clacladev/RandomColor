@@ -15,11 +15,14 @@ In the test project you can test the two methods
 
 
 # Installation
+You have two ways to install this module/framework/library.
 
-### Option A: Frameworks (Best)
+#### Option A: Frameworks (Better)
 Trasnform your XCode project into a workspace. Then add the RandomColorExample project to your workspace. Now goes in the Project, select your app *target* and add a new *Linked Framework*. Add the framework with name **RandomColor.framework**.
 
-### Option B: Copy
+Remember that you should import the module (*import RandomColor*) in the classes where you're going to use it.
+
+#### Option B: Copy
 Download the code and add to your project the file **RandomColorExtension.swift** . Start to use the new class methods.
 
 
