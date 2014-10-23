@@ -11,10 +11,13 @@ import UIKit
 
 
 
+/**
+*  All the methods are prefixed with RC (random color) to avoid clashing with other UIColor extensions that you might have added
+*/
 public extension UIColor {
     
     
-    private class func randomValueForColor() -> CGFloat {
+    private class func RC_randomValueForColor() -> CGFloat {
         
         return CGFloat( CGFloat(arc4random()) % 256 / 255.0)
     }
@@ -26,9 +29,9 @@ public extension UIColor {
     
     :returns: Color
     */
-    public class func randomColor() -> UIColor {
+    public class func RC_randomColor() -> UIColor {
         
-        return UIColor(red: randomValueForColor(), green: randomValueForColor(), blue: randomValueForColor(), alpha: 1.0)
+        return UIColor(red: RC_randomValueForColor(), green: RC_randomValueForColor(), blue: RC_randomValueForColor(), alpha: 1.0)
     }
     
     
@@ -38,7 +41,7 @@ public extension UIColor {
     
     :returns: Color
     */
-    public class func randomToneByColor(color: UIColor) -> UIColor {
+    public class func RC_randomToneByColor(color: UIColor) -> UIColor {
         
         var hue: CGFloat = 0
         var saturation: CGFloat = 0
@@ -47,7 +50,7 @@ public extension UIColor {
         
         color.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
         
-        return UIColor(hue: hue, saturation: randomValueForColor(), brightness: randomValueForColor(), alpha: alpha)
+        return UIColor(hue: hue, saturation: RC_randomValueForColor(), brightness: RC_randomValueForColor(), alpha: alpha)
     }
     
 }

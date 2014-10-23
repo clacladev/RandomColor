@@ -22,11 +22,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didPressNewRandomColorButton(sender: AnyObject) {
-        self.view.backgroundColor = UIColor.randomColor()
+        self.view.backgroundColor = UIColor.RC_randomColor()
     }
     
     @IBAction func didPressNewRandomToneByColorButton(sender: AnyObject) {
-        self.view.backgroundColor = UIColor.randomToneByColor(self.view.backgroundColor!)
+        self.view.backgroundColor = UIColor.RC_randomToneByColor(self.view.backgroundColor!)
     }
 
 }
