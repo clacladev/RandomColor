@@ -10,6 +10,11 @@ In the UIColor extension I've added two class methods:
 	
 	// Create a new tone of a specified starting color
 	UIColor.randomToneByColor(color: UIColor)
+	
+	
+	// Random color generated with the Golden ratio
+	// Use this, adjusting only satuarion/brightness if needed, to generate good looking random colors
+	UIColor.RC_randomGoldenRatioColor(saturation: 0.5, brightness: 0.95)
 
 In the test project you can test the two methods
 

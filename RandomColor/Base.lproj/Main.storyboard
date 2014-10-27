@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEG-I5-UOY">
-                                <rect key="frame" x="237" y="229" width="127" height="30"/>
+                                <rect key="frame" x="237" y="247" width="127" height="30"/>
                                 <state key="normal" title="New random color">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -34,13 +34,25 @@
                                     <action selector="didPressNewRandomToneByColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wqv-V3-KO7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FER-97-NVW">
+                                <rect key="frame" x="194" y="323" width="213" height="30"/>
+                                <state key="normal" title="New random golden ratio color">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressNewRandomGoldenRatioColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v0I-XY-IWX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="yhP-hY-FYG" secondAttribute="centerX" id="7JO-jb-H44"/>
+                            <constraint firstItem="yhP-hY-FYG" firstAttribute="centerX" secondItem="FER-97-NVW" secondAttribute="centerX" id="BlU-Yj-hFD"/>
+                            <constraint firstItem="yhP-hY-FYG" firstAttribute="top" secondItem="sEG-I5-UOY" secondAttribute="bottom" constant="8" id="If7-CQ-4vR"/>
+                            <constraint firstItem="sEG-I5-UOY" firstAttribute="centerX" secondItem="yhP-hY-FYG" secondAttribute="centerX" id="PUd-pT-LfP"/>
                             <constraint firstAttribute="centerX" secondItem="sEG-I5-UOY" secondAttribute="centerX" id="Ria-7s-KS2"/>
-                            <constraint firstAttribute="centerY" secondItem="sEG-I5-UOY" secondAttribute="centerY" constant="56" id="Y00-ya-1FL"/>
                             <constraint firstAttribute="centerY" secondItem="yhP-hY-FYG" secondAttribute="centerY" id="o8M-5Z-e2H"/>
+                            <constraint firstItem="FER-97-NVW" firstAttribute="top" secondItem="yhP-hY-FYG" secondAttribute="bottom" constant="8" id="oAy-zD-rYs"/>
                         </constraints>
                     </view>
                 </viewController>

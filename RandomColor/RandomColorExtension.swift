@@ -53,4 +53,26 @@ public extension UIColor {
         return UIColor(hue: hue, saturation: RC_randomValueForColor(), brightness: RC_randomValueForColor(), alpha: alpha)
     }
     
+    
+    
+    /**
+    Random color using the golden ratio, so proper random colors
+    Inspired by http://martin.ankerl.com/2009/12/09/how-to-create-random-colors-programmatically/
+    
+    :param: saturation Saturation percentage
+    :param: brightness Brightness percentage
+    
+    :returns: UIColor
+    */
+    public class func RC_randomGoldenRatioColor(saturation: CGFloat = 0.5, brightness: CGFloat = 0.95) -> UIColor {
+
+        let goldenRatioConjugate: CGFloat = 0.618033988749895
+        var hue = RC_randomValueForColor()
+        
+        hue += goldenRatioConjugate
+        hue %= 1
+        
+        return UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: 1.0)
+    }
+    
 }

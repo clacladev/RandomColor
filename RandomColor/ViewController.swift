@@ -28,6 +28,10 @@ class ViewController: UIViewController {
     @IBAction func didPressNewRandomToneByColorButton(sender: AnyObject) {
         self.view.backgroundColor = UIColor.RC_randomToneByColor(self.view.backgroundColor!)
     }
+    
+    @IBAction func didPressNewRandomGoldenRatioColorButton(sender: AnyObject) {
+        self.view.backgroundColor = UIColor.RC_randomGoldenRatioColor()
+    }
 
 }
 
